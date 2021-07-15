@@ -10,7 +10,6 @@
 		4B8F6B6926A08C9C00F47387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */; };
 		4B8F6B6B26A08C9C00F47387 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6A26A08C9C00F47387 /* SceneDelegate.swift */; };
 		4B8F6B6D26A08C9C00F47387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6C26A08C9C00F47387 /* ViewController.swift */; };
-		4B8F6B7026A08C9C00F47387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6E26A08C9C00F47387 /* Main.storyboard */; };
 		4B8F6B7326A08C9C00F47387 /* Spent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B7126A08C9C00F47387 /* Spent.xcdatamodeld */; };
 		4B8F6B7526A08C9E00F47387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F6B7426A08C9E00F47387 /* Assets.xcassets */; };
 		4B8F6B7826A08C9E00F47387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8F6B7626A08C9E00F47387 /* LaunchScreen.storyboard */; };
@@ -40,7 +39,6 @@
 		4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8F6B6A26A08C9C00F47387 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B8F6B6C26A08C9C00F47387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B8F6B6F26A08C9C00F47387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B8F6B7226A08C9C00F47387 /* Spent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spent.xcdatamodel; sourceTree = "<group>"; };
 		4B8F6B7426A08C9E00F47387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8F6B7726A08C9E00F47387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */,
 				4B8F6B6A26A08C9C00F47387 /* SceneDelegate.swift */,
 				4B8F6B6C26A08C9C00F47387 /* ViewController.swift */,
-				4B8F6B6E26A08C9C00F47387 /* Main.storyboard */,
 				4B8F6B7426A08C9E00F47387 /* Assets.xcassets */,
 				4B8F6B7626A08C9E00F47387 /* LaunchScreen.storyboard */,
 				4B8F6B7926A08C9E00F47387 /* Info.plist */,
@@ -236,7 +233,6 @@
 			files = (
 				4B8F6B7826A08C9E00F47387 /* LaunchScreen.storyboard in Resources */,
 				4B8F6B7526A08C9E00F47387 /* Assets.xcassets in Resources */,
-				4B8F6B7026A08C9C00F47387 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B8F6B6E26A08C9C00F47387 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B8F6B6F26A08C9C00F47387 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B8F6B7626A08C9E00F47387 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,6 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZSTN83ADW;
 				INFOPLIST_FILE = Spent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.homemadeproject.Spent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZSTN83ADW;
 				INFOPLIST_FILE = Spent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.homemadeproject.Spent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
