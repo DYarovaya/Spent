@@ -11,6 +11,7 @@
 		4B1C1B9426A32AFA00B51714 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1B9326A32AFA00B51714 /* TransactionCell.swift */; };
 		4B1C1B9626A32F0800B51714 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1B9526A32F0800B51714 /* extension+UIView.swift */; };
 		4B1C1B9826A48DD900B51714 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1B9726A48DD900B51714 /* CustomDateFormatter.swift */; };
+		4B78BAB426A73A0100B8C351 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78BAB326A73A0100B8C351 /* StorageManager.swift */; };
 		4B8F6B6926A08C9C00F47387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */; };
 		4B8F6B6B26A08C9C00F47387 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6A26A08C9C00F47387 /* SceneDelegate.swift */; };
 		4B8F6B6D26A08C9C00F47387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8F6B6C26A08C9C00F47387 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		4B1C1B9326A32AFA00B51714 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		4B1C1B9526A32F0800B51714 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
 		4B1C1B9726A48DD900B51714 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		4B78BAB326A73A0100B8C351 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		4B8F6B6526A08C9C00F47387 /* Spent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8F6B6A26A08C9C00F47387 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Formatters;
 			sourceTree = "<group>";
 		};
+		4B78BAB226A739E400B8C351 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4B78BAB326A73A0100B8C351 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		4B8F6B5C26A08C9C00F47387 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		4B8F6B6726A08C9C00F47387 /* Spent */ = {
 			isa = PBXGroup;
 			children = (
+				4B78BAB226A739E400B8C351 /* Managers */,
 				4B1C1B9A26A48FF200B51714 /* Formatters */,
 				4B1C1B9926A48FCC00B51714 /* Extensions */,
 				4B8F6B6826A08C9C00F47387 /* AppDelegate.swift */,
@@ -300,6 +311,7 @@
 				4B8F6B6B26A08C9C00F47387 /* SceneDelegate.swift in Sources */,
 				4B1C1B9826A48DD900B51714 /* CustomDateFormatter.swift in Sources */,
 				4B1C1B9226A30DDC00B51714 /* HistoryTableViewController.swift in Sources */,
+				4B78BAB426A73A0100B8C351 /* StorageManager.swift in Sources */,
 				4B1C1B9626A32F0800B51714 /* extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

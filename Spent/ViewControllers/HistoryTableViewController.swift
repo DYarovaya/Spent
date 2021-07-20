@@ -9,33 +9,17 @@ import UIKit
 import CoreData
 
 class HistoryTableViewController: UITableViewController {
-    private var transactions: [Transaction] = []
-    private let viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
+    private var transactions = StorageManager.shared.fetchAllData()
     private static let cellId = "cell"
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(TransactionCell.self, forCellReuseIdentifier: Self.cellId)
         tableView.dataSource = self
         setupNavigationBar()
-        getDataFromDatabase()
         tableView.reloadData()
-        getDay()
     }
     
-    private func getDay() {
-        for i in 1...transactions.count-1 {
-            
-            print("Day: \(transactions[i].date)")
-        }
-    }
-
     // MARK: - Table view data source
-
-    
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Transaction count: \(transactions.count)")
         return transactions.count
@@ -59,9 +43,7 @@ class HistoryTableViewController: UITableViewController {
         navBarAppereance.titleTextAttributes = [.foregroundColor: UIColor.black]
 
         navigationController?.navigationBar.standardAppearance = navBarAppereance
-        //navigationController?.navigationBar.scrollEdgeAppearance = navBarAppereance
-
-        // Add button to nav bar
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .close,
             target: self,
@@ -73,15 +55,5 @@ class HistoryTableViewController: UITableViewController {
 
     @objc private func exitHistory() {
         dismiss(animated: true)
-    }
-    
-    private func getDataFromDatabase() {
-        let fetchRequest: NSFetchRequest<Transaction> = Transaction.fetchRequest()
-        
-        do {
-            transactions = try viewContext.fetch(fetchRequest)
-        } catch let error {
-            print(error)
-        }
     }
 }
